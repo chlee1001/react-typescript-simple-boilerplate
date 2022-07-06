@@ -60,7 +60,6 @@ yarn build
 
 #### Babel plugins
 - [`@babel/plugin-proposal-class-properties`](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - The compiler for next generation JavaScript
-- [`babel-plugin-module-resolver`](https://github.com/tleunen/babel-plugin-module-resolver) - This plugin allows you to add new "root" directories that contain your modules
 - [`react-refresh`](https://www.npmjs.com/package/react-refresh) - Implements the wiring necessary to integrate Fast Refresh into bundlers
 
 ### Loaders
