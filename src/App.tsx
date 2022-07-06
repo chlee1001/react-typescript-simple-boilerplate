@@ -1,8 +1,13 @@
 import React, { FC } from 'react'
-import styles from './App.module.css'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from '#containers/home-page'
 
 const App: FC = () => {
-  return <div className={styles.AppContainer}>test!</div>
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
+  )
 }
 
 export default App

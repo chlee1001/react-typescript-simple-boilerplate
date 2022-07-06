@@ -3,10 +3,35 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "#container/*": ["src/container/*"]
+      "#apis/*": [
+        "./src/apis/*"
+      ],
+      "#assets/*": [
+        "./src/assets/*"
+      ],
+      "#constants/*": [
+        "./src/constants/*"
+      ],
+      "#components/*": [
+        "./src/components/*"
+      ],
+      "#containers/*": [
+        "./src/containers/*"
+      ],
+      "#styles/*": [
+        "./src/styles/*"
+      ],
+      "#types/*": [
+        "./src/types/*"
+      ]
     },
     "target": "es6",
-    "lib": ["dom", "dom.iterable", "esnext", "es6"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es6"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -23,6 +48,13 @@
     "jsx": "react-jsx",
     "strictNullChecks": true
   },
-  "include": ["src", "src/**/*", "@types/**/*.d.ts"],
-  "exclude": ["dist", "node_modules"]
+  "include": [
+    "src",
+    "src/**/*",
+    "@types/**/*.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
