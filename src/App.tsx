@@ -1,11 +1,8 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
+import styles from './App.module.css'
 
 const App: FC = () => {
-    return (
-        <div>
-            test!
-        </div>
-    );
-};
+  return <div className={styles.AppContainer}>test!</div>
+}
 
-export default App;
+export default App
