@@ -81,7 +81,7 @@ yarn build
 
 - [`eslint`](https://github.com/eslint/eslint) - Enforce styleguide across application
 - [`eslint-config-airbnb`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Base JS styleguide of Airbnb
-- [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) - Base JS styleguide of Airbnb
+- [`eslint-config-airbnb-typescript`](https://github.com/iamturns/eslint-config-airbnb-typescript) - Enhances Airbnb's ESLint config with TypeScript support
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implement prettier rules
 - [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) - Implement import rules
 - [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) - Static AST checker for accessibility rules on JSX elements
@@ -89,13 +89,6 @@ yarn build
 - [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react) - React specific linting rules for `ESLint`
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) - This ESLint plugin enforces the Rules of Hooks
 - [`prettier`](https://github.com/prettier/prettier) - code formatter
-
-- [`stylelint`](https://stylelint.io/) - Modern linter that helps you avoid errors and enforce conventions in your styles
-- [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended) - The recommended shareable config for Stylelint
-- [`stylelint-config-styled-components`](https://github.com/styled-components/stylelint-config-styled-components) - The shareable stylelint config for stylelint-processor-styled-components
-- [`stylelint-processor-styled-components`](https://github.com/styled-components/stylelint-processor-styled-components) - Lint your styled components with `stylelint`!
-- [`@stylelint/postcss-css-in-js`](https://github.com/stylelint/postcss-css-in-js) - PostCSS syntax for parsing CSS in JS
-- [`postcss-syntax`](https://www.npmjs.com/package/postcss-syntax)
 
 ## License
 
