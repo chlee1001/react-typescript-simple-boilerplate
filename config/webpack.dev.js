@@ -38,10 +38,10 @@ module.exports = merge(common, {
     new LoaderOptionsPlugin({ debug: true }),
   ],
   devServer: {
-    devMiddleware: { publicPath: '/dist/' },
-    static: paths.public,
+    static: paths.build,
     compress: true,
     port: 3001,
     hot: true,
+    historyApiFallback: true,
   },
 })
