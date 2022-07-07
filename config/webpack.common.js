@@ -2,9 +2,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { TsconfigPathsPlugin } = require('tsconfig-paths-webpack-plugin')
 
 const paths = require('./paths')
-const { TsconfigPathsPlugin } = require('tsconfig-paths-webpack-plugin')
+
+const isDevelopment = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: {
@@ -39,8 +41,8 @@ module.exports = {
           ],
           plugins: [
             '@babel/plugin-proposal-class-properties',
-            'react-refresh/babel',
-          ],
+            isDevelopment && require.resolve('react-refresh/babel'),
+          ].filter(Boolean),
         },
         exclude: /node_modules/,
       },
@@ -53,17 +55,17 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new RefreshWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: paths.public + '/index.html',
       favicon: paths.public + '/favicon.ico',
       filename: 'index.html',
     }),
-  ],
+    isDevelopment && new RefreshWebpackPlugin(),
+  ].filter(Boolean),
   resolve: {
-    modules: ['node_modules'],
-    extensions: ['.js', '.ts', '.tsx'],
+    modules: [paths.src, 'node_modules'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', 'css'],
     plugins: [new TsconfigPathsPlugin()],
   },
 }
