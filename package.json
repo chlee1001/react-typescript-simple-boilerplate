@@ -1,13 +1,11 @@
 {
   "name": "react-typescript-simple-boilerplate",
   "version": "0.0.1",
-  "main": "index.js",
-  "repository": "https://github.com/chlee1001/react-typescript-simple-boilerplate",
   "author": "chlee1001 <chlee1001@naver.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve --config config/webpack.dev.js --env development",
-    "build": "webpack --config config/webpack.prod.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint --fix ./src --ext .js,.jsx,.ts,.tsx"
@@ -32,6 +30,7 @@
     "@typescript-eslint/parser": "^5.30.5",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.4",
