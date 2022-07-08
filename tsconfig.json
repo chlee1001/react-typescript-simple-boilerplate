@@ -2,29 +2,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
-    "paths": {
-      "#apis/*": [
-        "./src/apis/*"
-      ],
-      "#assets/*": [
-        "./src/assets/*"
-      ],
-      "#constants/*": [
-        "./src/constants/*"
-      ],
-      "#components/*": [
-        "./src/components/*"
-      ],
-      "#containers/*": [
-        "./src/containers/*"
-      ],
-      "#styles/*": [
-        "./src/styles/*"
-      ],
-      "#types/*": [
-        "./src/types/*"
-      ]
-    },
     "target": "es6",
     "lib": [
       "dom",
@@ -43,10 +20,12 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "sourceMap": true,
     "downlevelIteration": true,
     "jsx": "react-jsx",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "noImplicitAny": true
   },
   "include": [
     "src",
@@ -56,5 +35,6 @@
   "exclude": [
     "dist",
     "node_modules"
-  ]
+  ],
+  "extends": "./tsconfig.paths.json"
 }
