@@ -1,37 +1,33 @@
 {
-  "isolatedModules": false,
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "#apis/*": [
+      "@/*": ["./src/*"],
+      "@apis/*": [
         "./src/apis/*"
       ],
-      "#assets/*": [
+      "@assets/*": [
         "./src/assets/*"
       ],
-      "#constants/*": [
-        "./src/constants/*"
-      ],
-      "#components/*": [
+      "@components/*": [
         "./src/components/*"
       ],
-      "#styles/*": [
-        "./src/styles/*"
+      "@constants/*": [
+        "./src/constants/*"
       ],
-      "#types/*": [
-        "./src/types/*"
-      ],
-      "#hooks/*": [
+      "@hooks/*": [
         "./src/hooks/*"
       ],
-      "#pages/*": [
+      "@pages/*": [
         "./src/pages/*"
       ],
-      "#utils/*": [
-        "./src/utils/*"
+      "@styles/*": [
+        "./src/styles/*"
       ],
-      "#_types/*": [
+      "@types/*": [
         "./src/types/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
       ],
     }
   }

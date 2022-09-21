@@ -28,23 +28,53 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "import"
-  ],
+  "plugins": ["import", "react", "@typescript-eslint"],
   "rules": {
     "no-console": "warn",
-    "import/prefer-default-export": "off",
-    "import/no-unresolved": 0,
-    "import/extensions": [
-      "off"
-    ],
     "react/function-component-definition": [
       2,
       {
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": 0,
+    "import/extensions": ["off"],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["sibling", "parent", "index"],
+          "type",
+          "unknown"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "{react*,react*/**}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{@apis/**,@assets/**,@components/**,@constants/**,@hooks/**,@pages/**,@styles/**,@types/**,@utils/**}",
+            "group": "unknown",
+            "position": "before"
+          },
+          {
+            "pattern": "./**",
+            "group": "unknown",
+            "position": "after"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always"
       }
     ]
   },
