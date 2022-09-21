@@ -7,8 +7,10 @@
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
-    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint --fix ./src --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint ./src --ext .ts,.tsx",
+    "lint:fix": "eslint --fix ./src --ext .ts,.tsx",
+    "lint:check": "eslint --fix --max-warnings 0 ./src --ext .ts,.tsx",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -42,6 +44,8 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": ">=7",
+    "lint-staged": ">=10",
     "mini-css-extract-plugin": "^2.6.1",
     "prettier": "^2.7.1",
     "react-refresh": "^0.14.0",
@@ -53,5 +57,11 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "npm run lint:check"
+    ]
   }
 }
