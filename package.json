@@ -63,5 +63,6 @@
       "prettier --write",
       "npm run lint:check"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }
