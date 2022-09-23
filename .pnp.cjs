@@ -64,6 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:18.2.0"],\
+            ["react-is", "npm:18.2.0"],\
             ["react-refresh", "npm:0.14.0"],\
             ["react-router-dom", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:6.4.1"],\
             ["style-loader", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:3.3.1"],\
@@ -4741,7 +4742,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],\
       ["core-js-pure", [\
         ["npm:3.25.2", {\
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.25.2-0212698e06/node_modules/core-js-pure/",\
+          "packageLocation": "./.yarn/cache/core-js-pure-npm-3.25.2-0212698e06-8940d844f3.zip/node_modules/core-js-pure/",\
           "packageDependencies": [\
             ["core-js-pure", "npm:3.25.2"]\
           ],\
@@ -8921,6 +8922,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:18.2.0"],\
+            ["react-is", "npm:18.2.0"],\
             ["react-refresh", "npm:0.14.0"],\
             ["react-router-dom", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:6.4.1"],\
             ["style-loader", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:3.3.1"],\
@@ -9867,14 +9869,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],\
       ["styled-components", [\
         ["npm:5.3.5", {\
-          "packageLocation": "./.yarn/unplugged/styled-components-virtual-ccb4f68190/node_modules/styled-components/",\
+          "packageLocation": "./.yarn/cache/styled-components-npm-5.3.5-88e3937b59-05a664dfe4.zip/node_modules/styled-components/",\
           "packageDependencies": [\
             ["styled-components", "npm:5.3.5"]\
           ],\
           "linkType": "SOFT"\
         }],\
         ["virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:5.3.5", {\
-          "packageLocation": "./.yarn/unplugged/styled-components-virtual-ccb4f68190/node_modules/styled-components/",\
+          "packageLocation": "./.yarn/__virtual__/styled-components-virtual-ccb4f68190/0/cache/styled-components-npm-5.3.5-88e3937b59-05a664dfe4.zip/node_modules/styled-components/",\
           "packageDependencies": [\
             ["styled-components", "virtual:e5032757ac2deddc6384676b0876e19fa56da44988368fae28077d713d3fd41df9e9e6758b3140b76581a4d41902c7e445387f8682ace425cbc494dd0a1ccfbd#npm:5.3.5"],\
             ["@babel/helper-module-imports", "npm:7.18.6"],\
@@ -9899,6 +9901,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/react-is",\
             "@types/react",\
             "react-dom",\
+            "react-is",\
             "react"\
           ],\
           "linkType": "HARD"\
