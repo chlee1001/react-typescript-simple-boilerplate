@@ -5,7 +5,9 @@ Create React App 사용을 벗어나 직접 react 프로젝트를 Typescript로 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
+  - Version 16.13.0 이상
+- [Yarn](https://yarnpkg.com/getting-started/install)
+  - Yarn Berry 사용
 
 ## Getting Started
 
@@ -16,6 +18,38 @@ git clone https://github.com/chlee1001/react-typescript-simple-boilerplate.git
 cd react-typescript-simple-project
 yarn install
 ```
+
+### Directory Structure
+
+```bash
+.
+├── config # webpack 설정
+│   ├── paths.js
+│   ├── webpack.common.js
+│   ├── webpack.dev.js
+│   └── webpack.prod.js
+├── dist # 빌드 결과물
+├── public
+│   ├── favicon.ico
+│   └── index.html
+├── src 
+│   ├── apis # API 호출 파일 관리
+│   ├── assets # 이미지, lottie json 등 asset 파일 관리
+│   ├── components # 컴포넌트 관리
+│   ├── constants # 상수 관리
+│   ├── hooks # 커스텀 훅 관리
+│   ├── pages # 페이지 관리
+│   │   └── homePage # 페이지 별 폴더 생성
+│   │       └── index.tsx
+│   └── styles # 스타일 관리
+│   │   ├── global-styles.tsx
+│   │   └── style.d.ts
+│   ├── App.tsx
+│   ├── index.tsx
+├── tsconfig.json # typescript 설정
+├── tsconfig.paths.json # typescript path 설정
+
+````
 
 ### Development server
 
