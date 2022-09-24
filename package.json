@@ -62,7 +62,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "prettier --write",
-      "npm run lint:check"
+      "yarn run lint:check"
     ]
   },
   "packageManager": "yarn@3.2.3"
