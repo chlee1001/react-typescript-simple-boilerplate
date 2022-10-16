@@ -10,6 +10,7 @@
     "lint": "eslint ./src --ext .ts,.tsx",
     "lint:fix": "eslint --fix ./src --ext .ts,.tsx",
     "lint:check": "eslint --fix --max-warnings 0 ./src --ext .ts,.tsx",
+    "lint:staged": "eslint --fix --max-warnings 0",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -62,7 +63,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "prettier --write",
-      "yarn run lint:check"
+      "yarn run lint:staged"
     ]
   },
   "packageManager": "yarn@3.2.3"
