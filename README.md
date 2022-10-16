@@ -39,11 +39,12 @@ yarn install
 │   ├── constants # 상수 관리
 │   ├── hooks # 커스텀 훅 관리
 │   ├── pages # 페이지 관리
-│   │   └── homePage # 페이지 별 폴더 생성
+│   │   └── HomePage # 페이지 별 폴더 생성
 │   │       └── index.tsx
 │   └── styles # 스타일 관리
 │   │   ├── global-styles.tsx
 │   │   └── style.d.ts
+   ├── types # 타입 관리
 │   ├── App.tsx
 │   ├── index.tsx
 ├── tsconfig.json # typescript 설정
