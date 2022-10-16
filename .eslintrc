@@ -38,6 +38,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "react/jsx-no-useless-fragment": 0,
     "import/prefer-default-export": "off",
     "import/no-unresolved": 0,
     "import/extensions": ["off"],
@@ -76,7 +77,8 @@
         "pathGroupsExcludedImportTypes": ["builtin"],
         "newlines-between": "always"
       }
-    ]
+    ],
+    "@typescript-eslint/no-unused-vars": 1
   },
   "ignorePatterns": [
     "paths.js",
